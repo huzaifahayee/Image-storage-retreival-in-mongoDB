@@ -7,7 +7,7 @@ const CreatPost = () => {
 
         <form >
             <input type="file" name="image" accept='image/*' />
-            <input type="text" name='caption' required/>
+            <input type="text" name='caption' placeholder='Enter caption' required/>
             <button type='submit'>Jaan Deyo</button>
         </form>
     </section>

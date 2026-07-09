@@ -1,9 +1,84 @@
-*{
-  margin: 0%;
-  padding: 0%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html, body,#root{
+
+html, body, #root {
   width: 100%;
   height: 100%;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.create-post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.create-post-section h1 {
+  margin-bottom: 24px;
+  color: #4a3728;
+  font-size: 28px;
+}
+
+.create-post-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.create-post-section input,
+.create-post-section textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-post-section input:focus,
+.create-post-section textarea:focus {
+  outline: none;
+  border-color: #d2a679;
+  box-shadow: 0 0 0 3px rgba(210, 166, 121, 0.25);
+}
+
+.create-post-section input[type="file"] {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.create-post-section button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #b5651d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.create-post-section button:hover {
+  background-color: #8f4e17;
+}
+
+.create-post-section button:active {
+  transform: scale(0.98);
 }
