@@ -1,5 +1,6 @@
 import React from 'react'
-import useState from 'react'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
 const Feed = () => {
 
@@ -10,6 +11,16 @@ const Feed = () => {
       caption: "This is a caption for the first post",
     },
   ])
+
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/posts')
+    .then( (response) => { 
+        console.log(response.data);
+    setPosts(response.data.posts) })
+         
+    
+  },[])
 
   return (
     <section className='feed-section'>
